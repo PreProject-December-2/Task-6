@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<h1>List Cars</h1>
+<div th:each="car : ${listCars}">
+    <h2 th:text="${car.name}"></h2>
+    <p th:text="${car.banchPress} + ' KG'"></p>
+    <p th:text="${car.squats} + ' KG'"></p>
+</div>
+</body>
+</html>
